@@ -1,0 +1,184 @@
+/* ESTILOS DE TIENDA ONLINE */
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2937;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* PÁGINAS DE ACCESO Y REGISTRO */
+.login-admin, .register-admin {
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #0f172a;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &__content {
+        background-color: #ffffff;
+        padding: 32px 36px;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 400px;
+        border: 1px solid #334155;
+        box-sizing: border-box;
+
+        > h1 {
+            font-size: 22px;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 0 20px 0;
+            color: #0f172a;
+        }
+
+        .login-form-admin {
+            label {
+                display: block;
+                font-size: 13px;
+                font-weight: 600;
+                margin-bottom: 6px;
+                color: #334155;
+            }
+
+            .field {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+
+.auth-switch-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #2563eb;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* ESPACIADO Y MARGENES DE BOTONES E INPUTS */
+.ui.button {
+    margin-right: 12px !important;
+    margin-bottom: 12px !important;
+    margin-top: 6px !important;
+
+    &:last-child {
+        margin-right: 0 !important;
+    }
+}
+
+.ui.input {
+    width: 100%;
+
+    input {
+        background-color: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 6px !important;
+        padding: 10px 12px !important;
+        font-size: 14px !important;
+        color: #1e293b !important;
+
+        &:focus {
+            border-color: #2563eb !important;
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15) !important;
+        }
+    }
+}
+
+.ui.primary.button {
+    background-color: #1e3a8a !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    padding: 11px 18px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    transition: background-color 0.15s ease !important;
+
+    &:hover {
+        background-color: #1e40af !important;
+    }
+}
+
+/* NAVBAR Y LAYOUTS */
+.navbar-app {
+    background-color: #1e293b;
+    padding: 14px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+
+        span.badge {
+            background-color: #2563eb;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            color: #cbd5e1;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #94a3b8;
+        font-size: 13px;
+
+        strong {
+            color: #ffffff;
+        }
+    }
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 24px;
+}
+
